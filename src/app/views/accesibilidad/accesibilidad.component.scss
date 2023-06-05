@@ -1,0 +1,29 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    // max-width: 600px;
+    margin: auto;
+    gap: 1rem;
+    width: min-content;
+}
+
+.grid-cell {
+    justify-self: center;
+    img {
+        width: 68px;
+        height: 68px;
+        object-fit: contain;
+    }
+
+    &.cursor {
+        img {
+            width: 50px !important;
+        }
+    }
+
+    &.dislexia {
+        img {
+            width: 70px;
+        }
+    }
+}
